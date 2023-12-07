@@ -1,0 +1,151 @@
+body {
+	background-color: #EEE;
+	font-family: Arial, Helvatica, sans-serif;}
+
+#container {
+	background-color: white;
+	width: auto;
+	margin-left: auto;
+	margin-right:auto;}
+	
+#header {
+	background-image: url("header.jpg");
+	background-color: #66CCFF;
+	color:white;
+	height: 120px;
+	text-align: center;}
+	
+#content {padding: 10px;}
+
+#nav {
+	text-align: center;
+	width: auto;
+	height:auto;
+}
+	
+#main {
+	width: 100%; 
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	flex-wrap: wrap; 
+	padding: 10px;
+}
+
+	
+#footer {clear: both;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  display: inline-block;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: #0B5345;
+  text-align: center;
+  padding: 20px 70px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #0B5345;
+  color: white;;
+}
+
+#nav .selected {font-weight:bold;}
+	a { display: block;
+	color: #0B5345;
+	padding: 31px 10px 31px 10px;
+	text-decoration: none;
+	text-align: center;}
+
+.active {
+  background-color: white;
+}
+	
+  /* Add any additional styles for the button or popup here */
+        #buyButton {
+            background-color: #00AFB5;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 auto;
+        }
+
+        /* Style for the popup */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for the close button in the popup */
+        #closeButton {
+            background-color: #00AFB5;
+            color: #333;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Add card styles */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: 4px;
+            text-align: center;
+            font-family: arial;
+			float : left;
+        }
+
+        .price {
+            color: grey;
+            font-size: 22px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+        }
+		
+#footer {
+	clear: both;
+	padding: 20px;
+	background-color: #00AFB5;
+	color: white;
+	text-align:center;}
+	p {text-align: center;}

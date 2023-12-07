@@ -1,0 +1,42 @@
+<DOCTYPE!>
+<html>
+	<head>
+		<title>PHARMACY</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	
+<body>
+		<div id="container">
+		<div id="header">
+		&copy; Copyright
+		</div>
+
+		<div id="content">
+		<div id="nav">
+		
+<ul>
+ <li><a href="index.html">HOME</a></li>
+  <li><a  class="selected" href="services.html">SERVICES</a></li>
+ <li><a href="aboutus.html">ABOUT US</a></li>
+<li><a href="product.html">PRODUCT</a></li>
+ <li><a href="contactus.html">CONTACT US</a></li>
+</ul></div>
+	
+	<div id="main">
+     <h2>SERVICES WE OFFER</h2>
+	 <img src="pharmacist2.jpg" alt="pharmacist4" width="500" height="300">
+	<h3>1. Prescription Services: not sure what disease you are experiencing? our pharmacist will help you</h3>     
+	<h3>2. Immunizations and Vaccinations: organize your injection appointment yourself with us</h3>    
+	<h3>3. 24 hours medical services: Connect with our healthcare anytime</h3>
+
+	
+
+</div></div>
+	<div id="footer">
+	<p>&#128205; 6 & 38, Jalan Perda Utama 1, Bandar Baru Perda, 14000 Bukit Mertajam, Pulau Pinang</p>
+	<p>&#128222; 0134875264 &nbsp;&nbsp; &#128231; siapharmacy123@gmail.com</p>	
+</div></footer>
+</div>
+</div>
+</body>
+</html>

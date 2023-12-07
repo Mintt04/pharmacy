@@ -1,0 +1,92 @@
+<DOCTYPE!>
+<html>
+<center>
+	<head>
+		<title>PHARMACY</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+			<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/> 
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	</head>
+
+   <!--header-->  
+<body>
+		<div id="container">
+		<div id="header">
+		&copy; Copyright
+		</div>
+	
+	  <!--navigation button-->
+  		<div id="content">
+		<div id="nav">
+	<ul>
+	  <li><a class="selected" rel="external" href="index.html">HOME</a></li>
+	  <li><a href="services.html" rel="external">SERVICES</a></li>
+	  <li><a href="aboutus.html" rel="external">ABOUT US</a></li>
+	  <li><a href="product.html" rel="external">PRODUCT</a></li>
+	  <li><a href="contactus.html" rel="external">CONTACT US</a></li>
+	</ul>
+</div>
+	
+   <!--slideshow for image first, second and third-->
+   <br>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="pharmacist.jpg" style="width:500px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="pharmacist2.jpg" style="width:500px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3/ 3</div>
+      <img src="pharmacist3.jpg" style="width:500px">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <br>
+  <!--set looping for slideshow using js-->
+<script>
+	var slideIndex = 0;
+	showSlides ();
+	function showSlides () {
+	  var i;
+	  var slides= document.getElementsByClassName("mySlides"); 
+	  for (i = 0; i < slides.length; i++){ 
+	  slides[i].style.display = "none";
+	  }
+	slideIndex++;
+	if (slideIndex> slides.length) {slideIndex = 1} 
+	slides[slideIndex-1].style.display="block";
+	setTimeout (showSlides, 3000); // Change image every 2 seconds
+	}
+</script>
+
+<!--content-->	
+	<div id="main">
+<h1 style="color: green" align="center">“A healthy outside starts from the inside”</h1>
+	<iframe width="560" height="350" src="https://www.youtube.com/embed/ploFnvE1770?si=R7flUuN9P3HLcN6w?autoplay=1&mute=1">
+	</iframe>
+		<h2 align="center">Why Choose SIA Pharmacy?</h2>
+		<h3>1. We only hired experienced and professional pharmacist to ensure you receive the highest quality of care</h3>
+		<h3>2. Book and organize your appointment yourself anytime</h3>
+		<h3>3. Our pharmacy has earned a reputation for reliability, trustworthiness, and excellence in healthcare</h3>
+       </video>
+
+</div></div>
+<!--footer-->
+	<div id="footer">
+	<p>&#128205; 6 & 38, Jalan Perda Utama 1, Bandar Baru Perda, 14000 Bukit Mertajam, Pulau Pinang</p>
+	<p>&#128222; 0134875264 &nbsp;&nbsp; &#128231; siapharmacy123@gmail.com</p>	
+</div></footer>
+</div>
+</body>
+</html>

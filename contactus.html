@@ -1,0 +1,95 @@
+<DOCTYPE!>
+<html>
+	<head>
+		<title>PHARMACY</title>
+		<link rel="stylesheet" type="text/css" href="contactus.css"/>
+			<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css"/> 
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script> 
+		<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	</head>
+	
+<body>
+   <!--header-->
+		<div id="container">
+		<div id="header">
+		&copy; Copyright
+		</div>
+		
+   <!--navigation button-->
+		<div id="content">
+		<div id="nav">
+			
+<ul>
+	 <li><a href="index.html" rel="external">HOME</a></li>
+	 <li><a href="services.html" rel="external">SERVICES</a></li>
+	 <li><a  href="aboutus.html" rel="external">ABOUT US</a></li>
+	 <li><a href="product.html" rel="external">PRODUCT</a></li>
+	 <li><a class="selected" rel="external" href="contactus.html">CONTACT US</a>
+    </li></div>
+
+	<!--customer form-->
+<div id="main">
+    <br>
+	<div class="card">
+    <p><b>::Either fill out the form with your inquiry::</p></b><br>
+    <form action="/action_page.php" onsubmit="return validate();" >
+        <label for="fname" >First name:</label><br>
+        <input type="text" id="fname" name="fname" size="50" placeholder="Enter your first name" required><br><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" size="50" name="lname" placeholder="Enter your last name"><br><br>
+
+        <label for="emailID">Email:</label><br>
+        <input type="text" id="emailID" name="email" size="50" placeholder="Enter your email ID"required><br><br>
+		
+		<label for="dateInput">Choose a date for your appoinment:</label><br>
+		<input type="date" id="dateInput" name="dateInput"><br><br>
+		
+       <!-- Script to handle date selection -->
+		<script>
+			// Get the input element
+			var dateInput = document.getElementById('dateInput');
+
+			// Add an event listener for when the date is selected
+			dateInput.addEventListener('change', function() {
+			// Get the selected date value
+			var selectedDate = dateInput.value;
+		
+			// You can use the selectedDate value as needed, for example, log it to the console
+			console.log('Selected Date:', selectedDate);
+    });
+  </script>
+		<p>What we can help you with?<br>
+            <textarea rows="6" cols="50" name="comment" form="usrform" placeholder="Enter your comment.."></textarea>
+        </p>
+		
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+			
+		<br><br>
+			<h4>Have a question? Contact Us</h4>
+			<br>
+			<li>
+				<button><a href="mailto:doraimaon@gmail.com" class="contact-button" class="ui-btn-icon-right">Email Us</a></button>
+			</li>
+			<br><br>
+			<li>
+				<button><a href="https://api.whatsapp.com/send?phone=60198483279" class="contact-button" target="_blank">Whatsapp Us</a></button>
+			</li>
+			<br><br>
+			<li>
+				<button><a href="tel:+60198483279" class="contact-button">Call Us</a></button>
+			</li>
+			<br><br>
+	</form>
+	</div>
+
+	<div id="footer">
+		<p>&#128205; 6 & 38, Jalan Perda Utama 1, Bandar Baru Perda, 14000 Bukit Mertajam, Pulau Pinang</p>
+		<p>&#128222; 0134875264 &nbsp;&nbsp; &#128231; siapharmacy123@gmail.com</p>	
+	</div>
+	</div>
+	</div>
+</div>
+</body>
+</html>
